@@ -1,0 +1,562 @@
+databaseChangeLog:
+# шоу программы
+  - property:
+      name: tesla
+      value: Тесла шоу
+  - property:
+      name: cryo
+      value: Крио шоу
+  - property:
+      name: scientific
+      value: Научное шоу с сухим льдом
+  - property:
+      name: paper
+      value: Бумажное шоу
+  - property:
+      name: confety
+      value: Конфетти шоу
+  - property:
+      name: bubble
+      value: Шоу мыльных пузырей
+  - property:
+      name: transformer
+      value: Шоу трансформеров
+  - property:
+      name: porolon
+      value: Поролоновое шоу
+  - property:
+      name: focus
+      value: Фокусник
+# Выездные квесты
+  - property:
+      name: spy
+      value: Шпионский квест
+  - property:
+      name: pirate
+      value: Пиратский квест
+  - property:
+      name: zombie
+      value: Зомби квест
+  - property:
+      name: fort
+      value: Форт Боярд
+  - property:
+      name: military
+      value: Милитари квест
+
+# Программы новинки
+  - property:
+      name: topchick
+      value: Топчик
+  - property:
+      name: amongus
+      value: Among Us
+  - property:
+      name: mafia
+      value: Активная мафия
+
+# Дополнительно
+  - property:
+      name: aqua
+      value: Аквагрим
+  - property:
+      name: icecream
+      value: Крио мороженое
+  - property:
+      name: treshbox
+      value: Треш короб
+  - property:
+      name: challenge
+      value: Напиток челлендж
+  - property:
+      name: minifocus
+      value: Мини Фокусы
+  - property:
+      name: genri
+      value: Генератор Мини Пузыри
+
+  - changeSet:
+      id: 2_create_entries_show_price
+      author: skoblikov_egor
+      changes:
+# шоу программы
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+            - column:
+                name: show_id
+                valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${tesla}')
+            - column:
+                name: show_name
+                value: ${tesla}
+            - column:
+                name: price
+                value: 6000 руб
+            - column:
+                name: duration
+                value: 30 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${cryo}')
+              - column:
+                  name: show_name
+                  value: ${cryo}
+              - column:
+                  name: price
+                  value: 7000 руб
+              - column:
+                  name: duration
+                  value: 45 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${scientific}')
+              - column:
+                  name: show_name
+                  value: ${scientific}
+              - column:
+                  name: price
+                  value: 6500 руб
+              - column:
+                  name: duration
+                  value: 45 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${paper}')
+              - column:
+                  name: show_name
+                  value: ${paper}
+              - column:
+                  name: price
+                  value: 5000 руб
+              - column:
+                  name: duration
+                  value: 30 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${confety}')
+              - column:
+                  name: show_name
+                  value: ${confety}
+              - column:
+                  name: price
+                  value: 5000 руб
+              - column:
+                  name: duration
+                  value: 30 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${bubble}')
+              - column:
+                  name: show_name
+                  value: ${bubble}
+              - column:
+                  name: price
+                  value: 5000 руб
+              - column:
+                  name: duration
+                  value: 30 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${transformer}')
+              - column:
+                  name: show_name
+                  value: ${transformer}
+              - column:
+                  name: price
+                  value: 8500 руб
+              - column:
+                  name: duration
+                  value: 45 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${porolon}')
+              - column:
+                  name: show_name
+                  value: ${porolon}
+              - column:
+                  name: price
+                  value: 6000 руб
+              - column:
+                  name: duration
+                  value: 30 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${focus}')
+              - column:
+                  name: show_name
+                  value: ${focus}
+              - column:
+                  name: price
+                  value: 6000 руб
+              - column:
+                  name: duration
+                  value: 30 мин
+# Выездные квесты
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+            - column:
+                name: show_id
+                valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${spy}')
+            - column:
+                name: show_name
+                value: ${spy}
+            - column:
+                name: price
+                value: 6000 руб
+            - column:
+                name: duration
+                value: 60 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+            - column:
+                name: show_id
+                valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${spy}')
+            - column:
+                name: show_name
+                value: ${spy}
+            - column:
+                name: price
+                value: 7500 руб
+            - column:
+                name: duration
+                value: 90 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${pirate}')
+              - column:
+                  name: show_name
+                  value: ${pirate}
+              - column:
+                  name: price
+                  value: 6000 руб
+              - column:
+                  name: duration
+                  value: 60 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${pirate}')
+              - column:
+                  name: show_name
+                  value: ${pirate}
+              - column:
+                  name: price
+                  value: 7500 руб
+              - column:
+                  name: duration
+                  value: 90 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${zombie}')
+              - column:
+                  name: show_name
+                  value: ${zombie}
+              - column:
+                  name: price
+                  value: 6000 руб
+              - column:
+                  name: duration
+                  value: 60 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${zombie}')
+              - column:
+                  name: show_name
+                  value: ${zombie}
+              - column:
+                  name: price
+                  value: 7500 руб
+              - column:
+                  name: duration
+                  value: 90 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${fort}')
+              - column:
+                  name: show_name
+                  value: ${fort}
+              - column:
+                  name: price
+                  value: 6000 руб
+              - column:
+                  name: duration
+                  value: 60 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${fort}')
+              - column:
+                  name: show_name
+                  value: ${fort}
+              - column:
+                  name: price
+                  value: 7500 руб
+              - column:
+                  name: duration
+                  value: 90 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${military}')
+              - column:
+                  name: show_name
+                  value: ${military}
+              - column:
+                  name: price
+                  value: 6000 руб
+              - column:
+                  name: duration
+                  value: 60 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${military}')
+              - column:
+                  name: show_name
+                  value: ${military}
+              - column:
+                  name: price
+                  value: 7500 руб
+              - column:
+                  name: duration
+                  value: 90 мин
+# Программы новинки
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${topchick}')
+              - column:
+                  name: show_name
+                  value: ${topchick}
+              - column:
+                  name: price
+                  value: 6000 руб
+              - column:
+                  name: duration
+                  value: 60 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${amongus}')
+              - column:
+                  name: show_name
+                  value: ${amongus}
+              - column:
+                  name: price
+                  value: 6000 руб
+              - column:
+                  name: duration
+                  value: 60 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${mafia}')
+              - column:
+                  name: show_name
+                  value: ${mafia}
+              - column:
+                  name: price
+                  value: 6000 руб
+              - column:
+                  name: duration
+                  value: 60 мин
+# Дополнительно
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${aqua}')
+              - column:
+                  name: show_name
+                  value: ${aqua}
+              - column:
+                  name: price
+                  value: 2000 руб
+              - column:
+                  name: duration
+                  value: 60 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${icecream}')
+              - column:
+                  name: show_name
+                  value: ${icecream}
+              - column:
+                  name: price
+                  value: 5000 руб
+              - column:
+                  name: duration
+                  value: 30 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${treshbox}')
+              - column:
+                  name: show_name
+                  value: ${treshbox}
+              - column:
+                  name: price
+                  value: 2000 руб
+              - column:
+                  name: duration
+                  value: 15 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${challenge}')
+              - column:
+                  name: show_name
+                  value: ${challenge}
+              - column:
+                  name: price
+                  value: 2000 руб
+              - column:
+                  name: duration
+                  value: 15 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${minifocus}')
+              - column:
+                  name: show_name
+                  value: ${minifocus}
+              - column:
+                  name: price
+                  value: 3000 руб
+              - column:
+                  name: duration
+                  value: 20 мин
+        - insert:
+            schemaName: tsuefa_schema
+            tableName: show_price
+            dbms: postgresql
+            columns:
+              - column:
+                  name: show_id
+                  valueComputed: (SELECT id FROM tsuefa_schema.programs_show WHERE show_name = '${genri}')
+              - column:
+                  name: show_name
+                  value: ${genri}
+              - column:
+                  name: price
+                  value: 500 руб
+              - column:
+                  name: duration
+                  value: 10 мин
+

@@ -1,0 +1,37 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2_create_table_show_price
+      author: skoblikov_egor
+      changes:
+        - createTable:
+            tableName: show_price
+            schemaName: tsuefa_schema
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_show_price_id
+                    nullable: false
+              - column:
+                  name: show_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: show_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: price
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: duration
+                  type: varchar(255)
+                  constraints:
+                    nullable: false

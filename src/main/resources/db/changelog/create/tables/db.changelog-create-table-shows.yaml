@@ -1,0 +1,31 @@
+databaseChangeLog:
+  - property:
+      name: uuid_function
+      value: public.uuid_generate_v4()
+
+  - changeSet:
+      id: 1_create_table_programs_show
+      author: skoblikov_egor
+      changes:
+        - createTable:
+            tableName: programs_show
+            schemaName: tsuefa_schema
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  defaultValueComputed: ${uuid_function}
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_show_id
+                    nullable: false
+              - column:
+                  name: category
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: show_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
