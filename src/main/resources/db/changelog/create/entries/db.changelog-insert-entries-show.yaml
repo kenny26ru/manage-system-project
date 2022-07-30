@@ -1,0 +1,292 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1_create_entries_show
+      author: skoblikov_egor
+      changes:
+#       Шоу программы
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Шоу программы
+              - column:
+                  name: show_name
+                  value: Тесла шоу
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Шоу программы
+              - column:
+                  name: show_name
+                  value: Крио шоу
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Шоу программы
+              - column:
+                  name: show_name
+                  value: Научное шоу с сухим льдом
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Шоу программы
+              - column:
+                  name: show_name
+                  value: Бумажное шоу
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Шоу программы
+              - column:
+                  name: show_name
+                  value: Конфетти шоу
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Шоу программы
+              - column:
+                  name: show_name
+                  value: Шоу мыльных пузырей
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Шоу программы
+              - column:
+                  name: show_name
+                  value: Шоу трансформеров
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Шоу программы
+              - column:
+                  name: show_name
+                  value: Поролоновое шоу
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Шоу программы
+              - column:
+                  name: show_name
+                  value: Фокусник
+
+#       Выездные квесты
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Выездные квесты
+              - column:
+                  name: show_name
+                  value: Шпионский квест
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Выездные квесты
+              - column:
+                  name: show_name
+                  value: Пиратский квест
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Выездные квесты
+              - column:
+                  name: show_name
+                  value: Зомби квест
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Выездные квесты
+              - column:
+                  name: show_name
+                  value: Форт Боярд
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Выездные квесты
+              - column:
+                  name: show_name
+                  value: Милитари квест
+
+#       Программы новинки
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Программы новинки
+              - column:
+                  name: show_name
+                  value: Топчик
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Программы новинки
+              - column:
+                  name: show_name
+                  value: Among Us
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Программы новинки
+              - column:
+                  name: show_name
+                  value: Активная мафия
+
+#       Дополнительно
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Дополнительно
+              - column:
+                  name: show_name
+                  value: Аквагрим
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Дополнительно
+              - column:
+                  name: show_name
+                  value: Крио мороженое
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Дополнительно
+              - column:
+                  name: show_name
+                  value: Треш короб
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Дополнительно
+              - column:
+                  name: show_name
+                  value: Напиток челлендж
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Дополнительно
+              - column:
+                  name: show_name
+                  value: Мини Фокусы
+        - insert:
+            catalogName: shows
+            schemaName: tsuefa_schema
+            tableName: programs_show
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Дополнительно
+              - column:
+                  name: show_name
+                  value: Генератор Мини Пузыри
+
+
+
+

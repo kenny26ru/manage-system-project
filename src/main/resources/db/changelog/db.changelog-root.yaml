@@ -1,0 +1,14 @@
+databaseChangeLog:
+
+- include:
+    file: db/changelog/create/tables/db.changelog-create-table-shows.yaml
+- include:
+    file: db/changelog/create/tables/db.changelog-create-table-show-price.yaml
+
+- include:
+    file: db/changelog/create/entries/db.changelog-insert-entries-show.yaml
+
+- include:
+      file: db/changelog/create/entries/db.changelog-insert-entries-show-price.yaml
+
+
