@@ -1,0 +1,199 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3_create_entries_animators
+      author: skoblikov_egor
+      changes:
+#        Анимация
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Анимация
+              - column:
+                  name: name
+                  value: Леди Баг и Супер Кот
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Анимация
+              - column:
+                  name: name
+                  value: Фиксики «Симка и Нолик»
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Анимация
+              - column:
+                  name: name
+                  value: Тролль «Розочка»
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Анимация
+              - column:
+                  name: name
+                  value: Бетмэн
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Анимация
+              - column:
+                  name: name
+                  value: Щенячий патруль «Скай и Маршал»
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Анимация
+              - column:
+                  name: name
+                  value: Лол «Балерина»
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Анимация
+              - column:
+                  name: name
+                  value: Человек Паук
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Анимация
+              - column:
+                  name: name
+                  value: Фея Винкс Стелла
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Анимация
+              - column:
+                  name: name
+                  value: Дэдпул
+#       Ростовые
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Ростовые
+              - column:
+                  name: name
+                  value: Буба
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Ростовые
+              - column:
+                  name: name
+                  value: Халк
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Ростовые
+              - column:
+                  name: name
+                  value: Мишка
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Ростовые
+              - column:
+                  name: name
+                  value: Босс Молокосос
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Ростовые
+              - column:
+                  name: name
+                  value: Заяц
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Ростовые
+              - column:
+                  name: name
+                  value: Микки Маус
+        - insert:
+            catalogName: animators
+            schemaName: tsuefa_schema
+            tableName: animators
+            dbms: postgresql
+            columns:
+              - column:
+                  name: category
+                  value: Ростовые
+              - column:
+                  name: name
+                  value: Железный человек
